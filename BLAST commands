@@ -1,0 +1,8 @@
+Bash command for the clustering procedure: 
+  $ blastclust -i <infile> -o <outfile> -p T -S 95 -L 0.98
+  
+Bash command for the generation of the HMM: 
+  $ hmmbuild <bpti_kunitz.hmm> <MSA_pdb_bptikunitz1.fasta>
+  
+Bash command for the hmmsearch: 
+  $ hmmsearch -noali -max -tblout <outfile> -Z 1 <bpti_kunitz.hmm> <seqfile> 
